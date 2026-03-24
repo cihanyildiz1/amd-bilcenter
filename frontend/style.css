@@ -186,6 +186,23 @@ a {
     border-radius: 4px;
 }
 
+.logo-img {
+    height: 60px; /* Base height for header */
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo-img {
+    height: 80px; /* Slightly larger in footer */
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
+}
+
+
 .nav-links {
     display: flex;
     gap: 30px;
