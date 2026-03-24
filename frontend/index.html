@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMD Bilcenter AB - Din bilverkstad i Stockholm</title>
-    <meta name="description" content="Snabbt, tryggt och professionellt. Vi på AMD Bilcenter servar, reparerar och hjälper dig även att köpa eller sälja bil i Skogås/Stockholm.">
+    <title>AMD Bilcenter AB - Snabb service. Rätt pris. Inga krångel.</title>
+    <meta name="description" content="Din professionella bilverkstad i Stockholm. Vi servar, reparerar och hjälper dig även att köpa eller sälja bil. Snabb service, transparent pris och erfaren personal.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="premium.css">
+    <style>
+        /* Additional local styles specifically for the new Why Us / Trust layout */
+        .why-us-premium {
+            padding: 80px 0 20px;
+            background-color: #0a0a0c;
+        }
+        .trust-stars {
+            color: #FDE02F;
+            font-size: 1.2rem;
+            display: flex;
+            gap: 2px;
+        }
+        .testimonial-short {
+            font-style: italic;
+            color: #aaa;
+            border-left: 2px solid rgba(255,255,255,0.2);
+            padding-left: 15px;
+            max-width: 300px;
+            text-align: left;
+            line-height: 1.4;
+        }
+    </style>
 </head>
 <body class="dark-premium">
 
@@ -33,7 +55,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="tel:0851510140" class="btn-outline-premium" style="padding: 10px 20px; font-size: 0.85rem;">Ring nu</a>
+                <a href="tel:0851510140" class="btn-premium" style="padding: 10px 20px; font-size: 0.85rem; box-shadow: 0 4px 15px rgba(0, 189, 239, 0.4);">Ring oss idag</a>
                 <button class="mobile-menu-toggle" style="color:#fff;"><i class="ph ph-list"></i></button>
             </div>
         </div>
@@ -43,25 +65,54 @@
     <section class="hero-premium">
         <div class="container hero-premium-container">
             <div class="hero-premium-content">
-                <h1>Din bilverkstad i Stockholm<br><span class="text-gradient">– snabbt, tryggt och professionellt</span></h1>
-                <p>Vi servar, reparerar och hjälper dig även att köpa eller sälja bil. Modern verkstad med högsta kvalitet och personlig service.</p>
+                <h1>Snabb service. Rätt pris.<br><span class="text-gradient">Inga krångel.</span></h1>
+                <p>Din bilverkstad i Stockholm – snabbt, tryggt och professionellt. Vi servar, reparerar och hjälper dig även att köpa eller sälja bil.</p>
                 
                 <div class="hero-buttons">
-                    <a href="tjanster.html" class="btn-premium">Boka tid <i class="ph-bold ph-calendar-plus"></i></a>
-                    <a href="kontakt.html" class="btn-outline-premium">Kontakta oss</a>
+                    <a href="tjanster.html" class="btn-premium">Boka tid nu <i class="ph-bold ph-calendar-plus"></i></a>
+                    <a href="tel:0851510140" class="btn-outline-premium">Ring oss idag <i class="ph-bold ph-phone"></i></a>
                 </div>
                 
-                <div class="trust-premium">
-                    <div class="trust-item"><i class="ph-fill ph-wrench"></i> Erfarna mekaniker</div>
-                    <div class="trust-item"><i class="ph-fill ph-clock"></i> Snabb service</div>
-                    <div class="trust-item"><i class="ph-fill ph-shield-check"></i> Tryggt och professionellt</div>
+                <div class="trust-premium" style="align-items: center; justify-content: center;">
+                    <div class="trust-item" style="flex-direction: column; align-items: center; gap: 5px;">
+                        <div class="trust-stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <span style="font-size:0.9rem; color:#fff; font-weight:600;">100+ nöjda kunder</span>
+                    </div>
+                    <div class="trust-item testimonial-short">
+                        "Otroligt snabba och proffsiga! Fick tillbaka bilen i toppskick samma dag. Guldstjärna!"<br><span style="color:#fff; font-weight:600; font-size:0.85rem; font-style:normal;">– Maria S.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Varför Välja Oss (Why us) -->
+    <section class="why-us-premium">
+        <div class="container">
+            <div class="premium-boxes" style="grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div class="premium-box" style="text-align: center; padding: 40px 20px; background: transparent; border: none;">
+                    <div class="box-icon" style="color: var(--primary-color); margin-bottom: 15px;"><i class="ph ph-lightning"></i></div>
+                    <h3 style="font-size: 1.4rem;">Snabb service</h3>
+                    <p style="font-size: 1rem; max-width: 280px; margin: 0 auto;">Vårt mål är alltid att få dig tillbaka på vägen så snabbt som möjligt utan att tumma på kvaliteten.</p>
+                </div>
+                <div class="premium-box" style="text-align: center; padding: 40px 20px; background: transparent; border: none;">
+                    <div class="box-icon" style="color: var(--primary-color); margin-bottom: 15px;"><i class="ph ph-currency-circle-dollar"></i></div>
+                    <h3 style="font-size: 1.4rem;">Transparent pris</h3>
+                    <p style="font-size: 1rem; max-width: 280px; margin: 0 auto;">Inga dolda avgifter eller otrevliga överraskningar. Du vet alltid vad det kostar innan vi påbörjar arbetet.</p>
+                </div>
+                <div class="premium-box" style="text-align: center; padding: 40px 20px; background: transparent; border: none;">
+                    <div class="box-icon" style="color: var(--primary-color); margin-bottom: 15px;"><i class="ph ph-users"></i></div>
+                    <h3 style="font-size: 1.4rem;">Erfaren personal</h3>
+                    <p style="font-size: 1rem; max-width: 280px; margin: 0 auto;">Mekaniker med åratals erfarenhet av alla bilmärken garanterar att din bil är i trygga händer.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 4 Services Boxes -->
-    <section class="services-premium">
+    <section class="services-premium" style="padding-top: 40px;">
         <div class="container">
             <div class="section-header text-center">
                 <h2>Våra <span class="text-gradient">Tjänster</span></h2>
@@ -69,28 +120,32 @@
             </div>
             
             <div class="premium-boxes premium-grid-4">
-                <div class="premium-box">
+                <div class="premium-box" style="display: flex; flex-direction: column;">
                     <div class="box-icon"><i class="ph ph-wrench"></i></div>
                     <h3>Service & reklamation</h3>
-                    <p>Fackmannamässig service och tunga reparationer av alla bilmärken. Vi håller din bil i absolut toppskick år efter år.</p>
+                    <p style="flex: 1;">Fackmannamässig service och tunga reparationer av alla bilmärken. Vi håller din bil i toppskick.</p>
+                    <a href="tjanster.html" class="btn-outline-premium" style="padding: 12px 20px; font-size: 0.95rem; margin-top: 25px; width: 100%; text-align: center; justify-content: center;">Boka tid nu</a>
                 </div>
                 
-                <div class="premium-box">
+                <div class="premium-box" style="display: flex; flex-direction: column;">
                     <div class="box-icon"><i class="ph ph-magnifying-glass"></i></div>
                     <h3>Felsökning</h3>
-                    <p>Avancerad bildiagnostik och djupgående felsökning för att snabbt och exakt identifiera och åtgärda tekniska och mekaniska problem.</p>
+                    <p style="flex: 1;">Avancerad bildiagnostik för att snabbt och exakt identifiera och åtgärda tekniska och mekaniska problem.</p>
+                    <a href="tjanster.html" class="btn-outline-premium" style="padding: 12px 20px; font-size: 0.95rem; margin-top: 25px; width: 100%; text-align: center; justify-content: center;">Boka tid nu</a>
                 </div>
                 
-                <div class="premium-box">
+                <div class="premium-box" style="display: flex; flex-direction: column;">
                     <div class="box-icon"><i class="ph ph-tire"></i></div>
                     <h3>Däck & underhåll</h3>
-                    <p>Däckbyte, säker hjulinställning, däckhotell samt löpande underhåll för din maximala säkerhet på vägen.</p>
+                    <p style="flex: 1;">Däckbyte, säker hjulinställning, däckhotell samt löpande underhåll för din säkerhet på vägen.</p>
+                    <a href="tjanster.html" class="btn-outline-premium" style="padding: 12px 20px; font-size: 0.95rem; margin-top: 25px; width: 100%; text-align: center; justify-content: center;">Boka tid nu</a>
                 </div>
 
-                <div class="premium-box" style="border-color: rgba(0, 189, 239, 0.2); background: linear-gradient(135deg, rgba(0, 189, 239, 0.05) 0%, transparent 100%);">
+                <div class="premium-box" style="border-color: rgba(0, 189, 239, 0.2); background: linear-gradient(135deg, rgba(0, 189, 239, 0.05) 0%, transparent 100%); display: flex; flex-direction: column;">
                     <div class="box-icon"><i class="ph ph-car-profile" style="color: var(--primary-color);"></i></div>
                     <h3 style="color: #fff;">Köp & sälj bil</h3>
-                    <p>Utöver professionell bilvård hjälper vi dig även att tryggt, snabbt och säkert köpa, sälja eller förmedla din nästa bil.</p>
+                    <p style="flex: 1;">Utöver professionell bilvård hjälper vi dig även att tryggt, snabbt och säkert köpa eller sälja din bil.</p>
+                    <a href="kontakt.html" class="btn-premium" style="padding: 12px 20px; font-size: 0.95rem; margin-top: 25px; width: 100%; text-align: center; justify-content: center;">Få offert</a>
                 </div>
             </div>
         </div>
@@ -99,11 +154,12 @@
     <!-- Call to actions bottom -->
     <section class="section-padding text-center" style="background-color: #050505; border-top: 1px solid rgba(255,255,255,0.03); padding: 100px 0;">
         <div class="container">
-            <h2 style="font-size: 3.5rem; color: #fff; margin-bottom: 20px;">Ge din bil det bästa.</h2>
-            <p style="color:#aaa; font-size: 1.25rem; max-width: 600px; margin: 0 auto 40px auto;">Behöver du pris på en bilreparation eller letar du efter en ny bil? Kontakta vår expertis för en fri offert idag.</p>
+            <h2 style="font-size: 3.5rem; color: #fff; margin-bottom: 20px;">Redo att boka?</h2>
+            <p style="color:#aaa; font-size: 1.25rem; max-width: 600px; margin: 0 auto 40px auto;">Behöver du pris på en bilreparation eller letar du efter en ny bil? Kontakta oss idag.</p>
             
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="tel:0851510140" class="btn-premium">Ring nu <i class="ph-bold ph-phone"></i></a>
+                <a href="tjanster.html" class="btn-premium">Boka tid nu <i class="ph-bold ph-calendar-plus"></i></a>
+                <a href="tel:0851510140" class="btn-premium" style="background-color: transparent; border: 1px solid var(--primary-color);">Ring oss idag <i class="ph-bold ph-phone"></i></a>
                 <a href="kontakt.html" class="btn-outline-premium">Få offert</a>
             </div>
         </div>
