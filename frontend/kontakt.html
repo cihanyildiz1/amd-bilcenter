@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – AMD Bilcenter AB</title>
+    <meta name="description" content="Kontakta AMD Bilcenter i Skogås. Ring 08-515 101 40 eller mejla info@amdbilcenter.se. Fräsarvägen 3, 14250 Skogås.">
+    <meta name="keywords" content="kontakt AMD Bilcenter, bilverkstad Skogås kontakt, adress, telefon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.amdbilcenter.se/kontakt.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.amdbilcenter.se/kontakt.html">
+    <meta property="og:title" content="Kontakt – AMD Bilcenter AB">
+    <meta property="og:description" content="Kontakta AMD Bilcenter i Skogås. Ring 08-515 101 40 eller mejla info@amdbilcenter.se.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="AMD Bilcenter AB">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        .contact-info-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+        }
+        .contact-info-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin-bottom: 24px;
+        }
+        .contact-info-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-info-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--gray);
+            font-size: 1rem;
+        }
+        .contact-info-card ul li:last-child { border-bottom: none; }
+        .contact-info-card ul li i { color: var(--red); font-size: 1.2rem; }
+        .contact-info-card ul li a { color: var(--gray); text-decoration: none; }
+        .contact-info-card ul li a:hover { color: var(--red); }
+        .map-wrapper {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            height: 100%;
+            min-height: 350px;
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-info">
+                <span><i class="ph ph-map-pin"></i> Fräsarvägen 3, 14250 Skogås</span>
+                <span><i class="ph ph-clock"></i> Mån-Fre 8:00-17:00 | Lör 11:00-15:00</span>
+            </div>
+            <div class="top-contact">
+                <a href="mailto:info@amdbilcenter.se"><i class="ph ph-envelope-simple"></i> info@amdbilcenter.se</a>
+                <a href="tel:0851510140" class="top-phone"><i class="ph ph-phone-call"></i> 08-515 101 40</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-text">AMD</span> BILCENTER
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Hem</a>
+                <a href="tjanster.html">Tjänster</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="kundnojdhet.html">Kundnöjdhet</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0851510140" class="btn btn-primary">BOKA TID</a>
+                <button class="mobile-menu-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Kontakta <span class="highlight">Oss</span></h1>
+            <p>Vi finns här för dig – ring, mejla eller besök oss i Skogås.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Kontaktuppgifter</h3>
+                    <ul>
+                        <li><i class="ph ph-map-pin"></i> Fräsarvägen 3, 14250 Skogås</li>
+                        <li><i class="ph ph-phone-call"></i> <a href="tel:0851510140">08-515 101 40</a></li>
+                        <li><i class="ph ph-envelope"></i> <a href="mailto:info@amdbilcenter.se">info@amdbilcenter.se</a></li>
+                        <li><i class="ph ph-globe"></i> <a href="https://www.amdbilcenter.se" target="_blank">amdbilcenter.se</a></li>
+                    </ul>
+
+                    <h3 style="margin-top:32px;">Öppettider</h3>
+                    <ul>
+                        <li><i class="ph ph-clock"></i> Måndag – Fredag: 08:00–17:00</li>
+                        <li><i class="ph ph-clock"></i> Lördag: 11:00–15:00</li>
+                        <li><i class="ph ph-prohibit"></i> Söndag: Stängt</li>
+                    </ul>
+
+                    <div style="margin-top:32px;">
+                        <a href="tel:0851510140" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+                            <i class="ph ph-phone-call"></i> Ring oss nu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2044.6!2d18.1!3d59.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e9b4d5c3d7%3A0x0!2zRnLDpHNhcnbDpGdlbiAzLCAxNDI1MCBTa29nw6Vz!5e0!3m2!1ssv!2sse!4v1"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="AMD Bilcenter karta">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-text">AMD</span> BILCENTER
+                    </a>
+                    <p>Ärliga, skickliga och prisvärda. Vi sätter dig som kund i fokus, oavsett om du är privatperson eller företag.</p>
+                    <div class="partner-logos">
+                        <span class="partner">Meka Ansluten</span>
+                        <span class="partner">Bernats Bil Partner</span>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Kontaktuppgifter</h3>
+                    <ul>
+                        <li><i class="ph ph-map-pin"></i> Fräsarvägen 3, 14250 Skogås</li>
+                        <li><i class="ph ph-phone"></i> 08-515 101 40</li>
+                        <li><i class="ph ph-envelope"></i> info@amdbilcenter.se</li>
+                        <li><i class="ph ph-globe"></i> amdbilcenter.se</li>
+                    </ul>
+                </div>
+
+                <div class="footer-hours">
+                    <h3>Öppettider</h3>
+                    <ul>
+                        <li><span>Måndag - Fredag</span> <span>08:00 - 17:00</span></li>
+                        <li><span>Lördag</span> <span>11:00 - 15:00</span></li>
+                        <li><span>Söndag</span> <span>Stängt</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMD Bilcenter AB. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
